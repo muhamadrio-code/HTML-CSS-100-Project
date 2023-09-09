@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cadetblue;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.loader {
+  display: flex;
+  align-items: space-evenly;
+}
+
+.loader div {
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 8px;
+  animation: load .8s ease infinite;
+}
+
+.loader .loading {
+  animation-delay: calc(var(--order) * 100ms);
+}
+
+@keyframes load {
+  50% {
+    scale: 1.5;
+  }
+}
