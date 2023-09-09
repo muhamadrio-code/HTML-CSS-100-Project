@@ -1,0 +1,16 @@
+.card {
+  background-color: bisque;
+  padding: 8px 16px;
+  margin: 24px 16px;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#e6de6f, #ffa43c);
+  border-radius: 50px;
+}
